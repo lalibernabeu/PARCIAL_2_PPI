@@ -80,3 +80,11 @@ function clearResult() {
 function updateDisplay() {
     document.getElementById('resultado').value = currentInput;
 }
+}
+document.querySelectorAll('.ver-mas').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const detalles = this.nextElementSibling;
+        detalles.style.display = detalles.style.display === 'none' ? 'block' : 'none';
+    });
+});
