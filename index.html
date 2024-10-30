@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Web de Solicitud de Servicios</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -44,6 +44,29 @@
             </div>
         </section>
     </main>
+
+    <div class="calculadora">
+        <h4>Calculadora</h4>
+        <input type="text" id="resultado" class="form-control mb-2" disabled>
+        <div class="btn-group-vertical w-100">
+            <button class="btn btn-light" onclick="appendNumber('1')">1</button>
+            <button class="btn btn-light" onclick="appendNumber('2')">2</button>
+            <button class="btn btn-light" onclick="appendNumber('3')">3</button>
+            <button class="btn btn-light" onclick="setOperation('+')">+</button>
+            <button class="btn btn-light" onclick="appendNumber('4')">4</button>
+            <button class="btn btn-light" onclick="appendNumber('5')">5</button>
+            <button class="btn btn-light" onclick="appendNumber('6')">6</button>
+            <button class="btn btn-light" onclick="setOperation('-')">-</button>
+            <button class="btn btn-light" onclick="appendNumber('7')">7</button>
+            <button class="btn btn-light" onclick="appendNumber('8')">8</button>
+            <button class="btn btn-light" onclick="appendNumber('9')">9</button>
+            <button class="btn btn-light" onclick="setOperation('*')">*</button>
+            <button class="btn btn-light" onclick="clearResult()">C</button>
+            <button class="btn btn-light" onclick="appendNumber('0')">0</button>
+            <button class="btn btn-light" onclick="calculate()">=</button>
+            <button class="btn btn-light" onclick="setOperation('/')">/</button>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
