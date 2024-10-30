@@ -9,16 +9,16 @@ function mostrarMas(idElemento) {
 }
 
 document.getElementById('miFormulario').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío del formulario por defecto
+    event.preventDefault(); 
 
-    // Obtener los valores del formulario
+    
     const oficio = document.getElementById('oficio').value;
     const descripcion = document.getElementById('descripcion').value;
 
-    // Mostrar mensaje de agradecimiento
+    
     document.getElementById('resultado').innerText = window.alert('¡Gracias por su sugerencia! ');
 
-    // Limpiar el formulario
+    
     document.getElementById('miFormulario').reset();
 });
 
