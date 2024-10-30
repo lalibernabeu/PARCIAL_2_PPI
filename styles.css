@@ -114,3 +114,14 @@ input, textarea {
     border-radius: 8px;
     background-color: white;
 }
+.card-group {
+    background-color: #FAEDCD;
+}
+.card-img-top {
+    height: 30vh;
+    width: 100%;
+
+}
+.mb-4 {
+    margin-top: 10px;
+}
